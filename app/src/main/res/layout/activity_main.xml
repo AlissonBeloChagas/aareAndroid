@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edPreco_Atual"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:hint="@string/preco_Atual"
+        android:inputType="numberDecimal"
+        android:textColor="#263238"
+        android:textColorHint="#cfd8dc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/preco_Atual"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/edN_Acoes_emitidas_na_Bolsa"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp" />
+
+    <EditText
+        android:id="@+id/edN_Acoes_emitidas_na_Bolsa"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:hint="@string/n_Açoes_emitidas_na_Bolsa"
+        android:inputType="number"
+        android:textColor="#263238"
+        android:textColorHint="#cfd8dc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/n_Açoes_emitidas_na_Bolsa"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/edPatrimonio_Liquido"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/patrimonio_Liquido"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/edlucro_Liquido"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp" />
+
+    <EditText
+        android:id="@+id/edPatrimonio_Liquido"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:hint="@string/patrimonio_Liquido"
+        android:inputType="numberDecimal"
+        android:textColor="#263238"
+        android:textColorHint="#cfd8dc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/edlucro_Liquido"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:hint="@string/lucro_Liquido"
+        android:inputType="numberDecimal"
+        android:textColor="#263238"
+        android:textColorHint="#cfd8dc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Ativo"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/lucro_Liquido"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/edAtivo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp" />
+
+    <EditText
+        android:id="@+id/edAtivo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="@string/Ativo"
+        android:inputType="text"
+        android:textColor="#263238"
+        android:textColorHint="#cfd8dc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:onClick="calcularResult"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edPreco_Atual" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

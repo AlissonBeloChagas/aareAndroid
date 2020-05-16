@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">alissonChagasAARE</string>
+    <string name="Ativo">Ativo</string>
+    <string name="lucro_Liquido">Lucro Líquido</string>
+    <string name="patrimonio_Liquido">Patrimônio Líquido</string>
+    <string name="n_Açoes_emitidas_na_Bolsa">Nº Ações emitidas na Bolsa</string>
+    <string name="preco_Atual">Preço Atual</string>
+    <string name="lucro_Por_Acao">Lucro Por Ação</string>
+    <string name="lpa">Lucro por ação</string>
+    <string name="pl">Preço Lucro</string>
+    <string name="roe">Retorno sobre o Patrimônio Líquido</string>
+    <string name="vpa">Valor Patrimonial por Ação</string>
+    <string name="pvp">Preço sobre o Valor Patrimonial</string>
+</resources>

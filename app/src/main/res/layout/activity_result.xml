@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/roeTextView"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/roe"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plResult" />
+
+    <TextView
+        android:id="@+id/vpaTextView"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/vpa"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roeResult" />
+
+    <TextView
+        android:id="@+id/pvpTextView"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:text="@string/pvp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vpaResult" />
+
+    <TextView
+        android:id="@+id/pvpResult"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:text="@string/pvp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pvpTextView" />
+
+    <TextView
+        android:id="@+id/vpaResult"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:text="@string/vpa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vpaTextView" />
+
+    <TextView
+        android:id="@+id/roeResult"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:text="@string/roe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roeTextView" />
+
+    <TextView
+        android:id="@+id/lpaResult"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:text="@string/lpa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lpaTextView" />
+
+    <TextView
+        android:id="@+id/lpaTextView"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="84dp"
+        android:text="@string/lpa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/plTextView"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:text="@string/pl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lpaResult" />
+
+    <TextView
+        android:id="@+id/plResult"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:text="@string/pl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
